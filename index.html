@@ -4,10 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blink-182 France</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="Images/Blink-182-Logo.png" alt="Logo" height="40px" width="auto">
+            </div>
+            <div class="menu">
+                <div class="menu-head">
+                    <div class="logo"><img src="Images/Blink-182-Logo.png" alt="logo" height="40px" width="auto"></div>
+                    <button type="button" class="close-menu-btn"></button>
+                </div>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="#">Le groupe</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="sub-menu">
+                            <li><a href="#"><span>Histoire</span></a></li>
+                            <li class="dropdown">
+                                <a href="#"><span>Membres</span></a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="sub-menu sub-menu-right">
+                                    <p>Membres actuels</p>
+                                    <li><a href="#"><span>Mark Hoppus</span></a></li>
+                                    <li><a href="#"><span>Tom DeLonge</span></a></li>
+                                    <li><a href="#"><span>Travis Barker</span></a></li>
+                                    <p>Anciens membres</p>
+                                    <li><a href="#"><span>Scott Raynor</span></a></li>
+                                    <li><a href="#"><span>Matt Skiba</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><span>Discohraphie</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Paroles</a></li>
+                    <li class="dropdown">
+                        <a href="#">Jeux</a>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="sub-menu sub-menu-right">
+                            <li><a href="#"><span>Quiz</span></a></li>
+                            <li><a href="#"><span>Devinner la chanson</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://uk.blink182merch.com/" target="_blank">Boutique</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <button type="button" class="open-menu-btn">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+  <script src="script.js"></script>
 </body>
 </html>
