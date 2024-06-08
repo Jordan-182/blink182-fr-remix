@@ -33,10 +33,14 @@ a{
     z-index: 10;
 }
 
+.header .menu{
+    margin-left: auto;
+}
+
 .header .header-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .header .logo img{
@@ -179,6 +183,10 @@ a{
         padding: 12px 0;
     }
 
+    .header .header-container{
+        justify-content: space-between;
+    }
+
     .header .menu{
         position: fixed;
         right: 0;
@@ -304,6 +312,7 @@ a{
     .header .menu .sub-menu a{
         padding: 12px 0 12px 15px;
         color: hsla(0, 0%, 0%, 0.75);
+        margin-left: 10px;
     }
 
     .header .menu .sub-menu .sub-menu a{
