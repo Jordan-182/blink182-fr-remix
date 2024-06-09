@@ -8,6 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
     color: var(--secondary-color);
     background: url(Images/arriere-plan-texture-lisse.jpg) center center / cover no-repeat;
+    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
 }
@@ -24,7 +25,7 @@ a{
 }
 
 .header{
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
@@ -40,7 +41,6 @@ a{
 .header .header-container{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
 }
 
 .header .logo img{
@@ -179,6 +179,65 @@ a{
 
 .header-right .open-menu-btn{
     display: none;
+}
+
+.index-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: wrap;
+}
+
+.banner img{
+    transition: transform 0.3s ease-out;
+}
+
+.banner img:hover{
+    transform: scale(1.02);
+}
+
+.index-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.listen-btn{
+    width: 170px;
+    padding: 5px 0;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    transition: 0.3s ease-out;
+}
+
+.listen-btn:hover{
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+}
+
+@media only screen and (max-width : 965px){
+    .index-main{
+        margin-bottom: 15px;
+    }
+
+    .banner img{
+        width: 250px;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width : 800px){
@@ -362,5 +421,18 @@ a{
 
     .header-right .open-menu-btn .line-3{
         transform: translateY(8px);
+    }
+}
+
+@media only screen and (max-width : 7500px){
+    .index-main{
+        padding-top: 90px;
+    }
+}
+
+@media only screen and (max-width : 500px){
+    .index-text img{
+        width: 250px;
+        height: auto;
     }
 }
