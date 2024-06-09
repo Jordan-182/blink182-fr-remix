@@ -232,9 +232,11 @@ a{
 
 .timeline{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    margin-top: 15px;
+    margin-top: 45px;
+    margin-bottom: 60px;
 }
 
 .timeline::after{
@@ -300,7 +302,7 @@ a{
     font-weight: 600;
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin-top: 90px;
+    margin-top: 120px;
 }
 
 .title{
@@ -358,6 +360,22 @@ a{
     padding: 10px 0;
 }
 
+@media only screen and (max-width : 1300px){
+    .timeline li{
+        width: 100px;
+    }
+
+    .timeline li:nth-child(even){
+        transform: translateY(65px);
+        align-items: flex-start;
+    }
+    
+    .timeline li:nth-child(odd){
+        transform: translateY(-68px);
+        align-items: flex-end;
+    }
+}
+
 @media only screen and (max-width : 965px){
     .index-main{
         margin-bottom: 15px;
@@ -366,6 +384,23 @@ a{
     .banner img{
         width: 250px;
         height: auto;
+    }
+}
+
+@media only screen and (max-width : 900px){
+    .timeline li{
+        width: 75px;
+        font-size: 0.80rem;
+    }
+
+    .timeline li:nth-child(even){
+        transform: translateY(65px);
+        align-items: flex-start;
+    }
+    
+    .timeline li:nth-child(odd){
+        transform: translateY(-71px);
+        align-items: flex-end;
     }
 }
 
