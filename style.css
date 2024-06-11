@@ -483,6 +483,10 @@ a{
     pointer-events: none;
   }
 
+  .comment{
+    color: var(--primary-color);
+  }
+
   @keyframes fadeIn{
     0%{
       opacity: 0;

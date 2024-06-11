@@ -143,19 +143,19 @@ function quizResult(){
     resultBox.querySelector(".percentage").innerHTML = percentage.toFixed(2) + "%";
     resultBox.querySelector(".total-score").innerHTML = correctAnswers + " / " + quiz.length;
     if (correctAnswers === 0){
-        resultBox.querySelector(".comment").innerHTML = "Le zéro pointé... ne serais-tu pas supporter Lillois en fait?"
+        resultBox.querySelector(".comment").innerHTML = "Le zéro pointé... c'est l'heure de découvrir le meilleur groupe de l'histoire!"
     }
     else if (correctAnswers > 0 && correctAnswers <4){
-        resultBox.querySelector(".comment").innerHTML = "Une prestation digne du Racing de 2012-2013, Eric Sikora t'enverrait faire des allers-retours sur les terrils jumeaux pour la peine!"
+        resultBox.querySelector(".comment").innerHTML = "Connais-tu vraiment ce groupe?"
     }
     else if (correctAnswers > 3 && correctAnswers <7){
-        resultBox.querySelector(".comment").innerHTML = "Un résultat très moyen mais qui prouve tout de même qu'un supporter Lensois sommeille en toi, continues et tu deviendras un vrai Sang et Or!"
+        resultBox.querySelector(".comment").innerHTML = "Il faudrait penser à réviser ses classiques!"
     }
     else if (correctAnswers > 6 && correctAnswers <10){
-        resultBox.querySelector(".comment").innerHTML = "Même les vrais Lensois ne sont pas parfaits! C'est un bon résultat!"
+        resultBox.querySelector(".comment").innerHTML = "Tu connais tes classiques mais il ne faut pas oublier certains albums sous-côtés!"
     }
     else {
-        resultBox.querySelector(".comment").innerHTML = "Un sans faute! Tu as réussi à éviter les pièges comme Medina évite les cartons rouges, tu as le Racing dans le sang!"
+        resultBox.querySelector(".comment").innerHTML = "Un sans faute! Tu maitrises tous les albums!"
     }
 }
 
