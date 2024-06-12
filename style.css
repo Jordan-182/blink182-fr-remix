@@ -389,6 +389,36 @@ a{
     box-sizing: border-box;
     cursor: pointer;
     transition: 0.3s ease;
+    position: relative;
+}
+
+.carousel-item::after{
+    content: 'Blink-182';
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin: auto 0;
+    color: var(--primary-color);
+    position: absolute;
+    height: 280px;
+    width: 280px;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, black, grey, lightgrey);
+    border: 1px solid white;
+    transition: 0.5s ease;
+    z-index: -1;
+}
+
+.carousel-item.active:hover::after{
+    transform: translateX(306px) rotate(360deg);
+}
+
+.carousel-item.active:hover{
+    transform: translateX(-153px);
+    min-width: 420px;
+    margin-left: 80px;
 }
 
 .carousel-item.active{
@@ -404,6 +434,8 @@ a{
     width: 300px;
     height: auto;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel-item:hover{
