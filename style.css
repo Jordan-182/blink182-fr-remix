@@ -393,19 +393,16 @@ a{
 }
 
 .carousel-item::after{
-    content: 'Blink-182';
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.25rem;
+    content: '';
     margin: auto 0;
     color: var(--primary-color);
     position: absolute;
     height: 280px;
     width: 280px;
-    top: 20px;
-    left: 20px;
+    top: 18px;
+    left: 18px;
     border-radius: 50%;
-    background: radial-gradient(circle, black, grey, lightgrey);
+    background: linear-gradient(to right, black, lightgrey);
     border: 1px solid white;
     transition: 0.5s ease;
     z-index: -1;
