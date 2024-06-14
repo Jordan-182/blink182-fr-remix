@@ -368,7 +368,7 @@ a{
     position: relative;
     width: 80%;
     max-width: 1120px;
-    height: 400px;
+    height: 410px;
     margin: auto;
     overflow: hidden;
     background: hsla(0, 0%, 0%, 0.25);
@@ -381,7 +381,7 @@ a{
     transition: transform 0.5s ease;
     gap: 50px;
     padding-left: 400px;
-    margin-top: 50px;
+    margin-top: 55px;
 }
 
 .carousel-item {
@@ -389,54 +389,85 @@ a{
     box-sizing: border-box;
     cursor: pointer;
     transition: 0.3s ease;
-    position: relative;
+    transition: transform 0.3s ease;
 }
 
-.carousel-item::after{
-    content: '';
-    margin: auto 0;
-    color: var(--primary-color);
-    position: absolute;
-    height: 280px;
-    width: 280px;
-    top: 18px;
-    left: 18px;
+.disc{
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    background: linear-gradient(to right, black, lightgrey);
-    border: 1px solid white;
-    transition: 0.5s ease;
+    /* background-color: #000000; */
+    transform: translate(5px , -335px) rotate(-180deg);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carousel-item.active .disc{
     z-index: -1;
 }
 
-.carousel-item.active:hover::after{
-    transform: translateX(306px) rotate(360deg);
+.carousel-item:not(.carousel-item.active){
+    margin-top: 20px;
 }
 
-.carousel-item.active:hover{
-    transform: translateX(-153px);
-    min-width: 420px;
-    margin-left: 80px;
+.carousel-item:not(.carousel-item.active) .disc{
+    display: none;
 }
 
 .carousel-item.active{
     margin-right: 20px;
     margin-top: -10px;
+    transition: transform 0.3s ease;
 }
 
 .carousel-item.active img{
     min-width: 320px;
+    z-index: 9;
 }
 
 .carousel-item img {
-    width: 300px;
+    width: 250px;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    transition: transform 0.3s ease;
 }
 
-.carousel-item:hover{
-    transform: scale(1.05);
+.carousel-item.active:hover{
+    transform: translateX(-50px);
+}
+
+.carousel-item.active:hover img{
+    transform: translateX(-50px);
+}
+
+.carousel-item.active:hover .disc{
+    transform: translate(200px , -335px) rotate(0deg);
+}
+
+.carousel-item.active:hover .carousel-item:not(.carousel-item.active){
+    display: none;
+}
+
+.eponyme-disc{
+    background: linear-gradient(to right , blue , pink);
+}
+
+.album-name{
+    width: 320px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 1.125rem;
+    margin-top: 3px;
+    font-weight: 600;
+    display: none;
+}
+
+.carousel-item.active .album-name{
+    display: block;
 }
 
 .carousel-control {
