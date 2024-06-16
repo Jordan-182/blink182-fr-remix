@@ -64,6 +64,40 @@
             </div>
         </div>
     </header>
+    <main class="container">
+        <h2 class="title">Paroles</h2>
+        <p class="article-text"> Bienvenue sur notre page dédiée aux paroles des chansons de blink-182, le groupe emblématique qui a marqué 
+            l'histoire du punk rock avec ses mélodies entraînantes et ses textes percutants. Depuis leurs débuts dans les années 90, 
+            blink-182 a su captiver des millions de fans à travers le monde grâce à des albums mémorables comme "Cheshire Cat", 
+            "Enema of the State" et "Take Off Your Pants and Jacket". Leur musique, mélange parfait de mélodie pop et d'énergie punk, 
+            a traversé les générations et continue d'inspirer de nouveaux artistes. <br><br>Sur cette page, vous trouverez les paroles de 
+            toutes leurs chansons, accessibles facilement grâce à notre formulaire interactif. Que vous soyez un fan de la première heure 
+            ou que vous découvriez tout juste l'univers de blink-182, notre outil vous permettra de plonger dans les mots qui ont défini 
+            une époque et continuent de résonner aujourd'hui. <br><br>Grâce à notre formulaire intuitif, il vous suffit de sélectionner un album, 
+            puis une chanson pour voir apparaître instantanément les paroles. Explorez, redécouvrez et chantez avec blink-182!</p>
+        <form>
+            <label for="album-select">Choisissez un album dans la liste</label>
+            <select name="album-select" id="album-select">
+                <option value="#">-- Album --</option>
+                <option value="cheshireCat">Cheshire Cat</option>
+                <option value="dudeRanch">Dude Ranch</option>
+                <option value="enemaOfTheState">Enema Of The State</option>
+                <option value="takeOffYourPantsAndJacket">Take Off Your Pants and Jacket</option>
+                <option value="blink182">Blink-182</option>
+                <option value="neighborhoods">Neighborhoods</option>
+                <option value="california">California</option>
+                <option value="californiaDeluxe">California Deluxe</option>
+                <option value="nine">Nine</option>
+                <option value="oneMoreTime">One More Time...</option>
+            </select>
+            <label for="song-select">Choisissez une chanson de l'album</label>
+            <select name="song-select" id="song-select">
+                <option value="#">-- Chanson --</option>
+            </select>
+        </form>
+        <div class="lyrics-text" id="lyrics"></div>
+    </main>
   <script src="script.js"></script>
+  <script src="paroles.js"></script>
 </body>
 </html>

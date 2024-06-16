@@ -361,6 +361,31 @@ a{
     padding: 10px 0;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+form label{
+    margin: 10px 0 5px 0;
+    font-weight: 600;
+}
+
+form select{
+    width: 230px;
+    text-align: center;
+}
+
+.lyrics-text{
+    text-align: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
 /* CETTE PARTIE CONCERNE LE CAROUSEL DE LA PAGE DISCOGRAPHIE */
 
 /* styles.css */

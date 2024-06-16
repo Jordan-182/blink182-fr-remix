@@ -75,5 +75,3 @@ function prevSlide() {
 
 // Initialize the carousel to show the first slide
 showSlide(currentSlide);
-
-
