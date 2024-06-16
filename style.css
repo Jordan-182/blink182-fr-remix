@@ -371,7 +371,7 @@ a{
     height: 410px;
     margin: auto;
     overflow: hidden;
-    background: hsla(0, 0%, 0%, 0.25);
+    background: hsla(0, 0%, 0%, 0.35);
     border-radius: 10px;
     margin-top: 30px;
 }
@@ -415,11 +415,11 @@ a{
 }
 
 .disc-hole{
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
-    background-color: #B5B5B5;
-    border: 10px solid darkgrey;
+    background-color: #9C9C9C;
+    border: 15px solid silver;
     position: absolute;
 }
 
