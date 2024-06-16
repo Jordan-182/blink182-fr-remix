@@ -396,7 +396,7 @@ a{
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    border: 2px solid silver;
+    /* border: 2px solid silver; */
     transform: translate(5px , -335px) rotate(-180deg);
     transition: transform 0.3s ease;
     display: flex;
@@ -405,22 +405,6 @@ a{
     align-items: center;
     position: relative;
     top: -2px;
-}
-
-.disc p{
-    color: var(--primary-color);
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-.disc-hole{
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    background-color: #9C9C9C;
-    border: 15px solid silver;
-    position: absolute;
 }
 
 .album-link{
@@ -433,6 +417,7 @@ a{
     border: 1px solid transparent;
     transition: background-color 0.3s ease;
     cursor: pointer;
+    margin-top: 135px;
 }
 
 .album-link:hover{
@@ -476,10 +461,6 @@ a{
     transform: translateX(180px);
 }
 
-/* .carousel-item.active:hover img{
-    transform: translateX(-150px);
-} */
-
 .carousel-item.active:hover .disc{
     transform: translate(250px , -335px) rotate(0deg);
 }
@@ -489,51 +470,51 @@ a{
 }
 
 .cat-disc{
-    background: #0D1A59;
+    background: url(Images/cat-cd.png) center center / cover;
 }
 
 .ranch-disc{
-    background: grey;
+    background: url(Images/ranch-cd.png) center center / cover;
 }
 
 .enema-disc{
-    background: radial-gradient(grey , white);
+    background: url(Images/enema-cd.png) center center / cover
 }
 
 .live-disc{
-    background: #988ABF;
+    background: url(Images/live-cd.png) center center / cover;
 }
 
 .toypaj-disc{
-    background: #B43034;
+    background: url(Images/toypaj-cd.png) center center / cover;
 }
 
 .eponyme-disc{
-    background: #488F94;
+    background: url(Images/eponyme-cd.png) center center / cover;
 }
 
 .hits-disc{
-    background: black;
+    background: url(Images/hits-cd.png) center center / cover;
 }
 
 .neighborhoods-disc{
-    background: radial-gradient(grey , darkgrey);
+    background: url(Images/neighborhoods-cd.png) center center / cover;
 }
 
 .california-disc{
-    background: radial-gradient(#F9AB6B , white);
+    background: url(Images/california-cd.png) center center / cover;
 }
 
 .california-deluxe-disc{
-    background: radial-gradient(#F5EF16 , black);
+    background: url(Images/california-deluxe-cd.png) center center / cover;
 }
 
 .nine-disc{
-    background: #FC1E9A;
+    background: url(Images/nine-cd.png) center center / cover;
 }
 
 .onemoretime-disc{
-    background: radial-gradient(darkgrey , white);
+    background: url(Images/onemoretime-cd.png) center center / cover;
 }
 
 .album-name{
