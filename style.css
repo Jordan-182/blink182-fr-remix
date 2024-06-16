@@ -378,7 +378,7 @@ a{
 
 .carousel-inner {
     display: flex;
-    transition: transform 0.5s ease;
+    transition: 0.3s ease;
     gap: 50px;
     padding-left: 400px;
     margin-top: 55px;
@@ -387,22 +387,57 @@ a{
 .carousel-item {
     min-width: 300px;
     box-sizing: border-box;
-    cursor: pointer;
     transition: 0.3s ease;
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
+    position: relative;
 }
 
 .disc{
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    /* background-color: #000000; */
+    border: 2px solid silver;
     transform: translate(5px , -335px) rotate(-180deg);
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    top: -2px;
+}
+
+.disc p{
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.disc-hole{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #B5B5B5;
+    border: 10px solid darkgrey;
+    position: absolute;
+}
+
+.album-link{
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.album-link:hover{
+    background-color: #cccccc;
+    border: 1px solid black;
 }
 
 .carousel-item.active .disc{
@@ -424,8 +459,9 @@ a{
 }
 
 .carousel-item.active img{
-    min-width: 320px;
+    width: 320px;
     z-index: 9;
+    cursor: pointer;
 }
 
 .carousel-item img {
@@ -436,24 +472,68 @@ a{
     transition: transform 0.3s ease;
 }
 
-.carousel-item.active:hover{
-    transform: translateX(-50px);
+.carousel-item.active:hover ~ .carousel-item:not(:hover){
+    transform: translateX(180px);
 }
 
-.carousel-item.active:hover img{
-    transform: translateX(-50px);
-}
+/* .carousel-item.active:hover img{
+    transform: translateX(-150px);
+} */
 
 .carousel-item.active:hover .disc{
-    transform: translate(200px , -335px) rotate(0deg);
+    transform: translate(250px , -335px) rotate(0deg);
 }
 
 .carousel-item.active:hover .carousel-item:not(.carousel-item.active){
     display: none;
 }
 
+.cat-disc{
+    background: #0D1A59;
+}
+
+.ranch-disc{
+    background: grey;
+}
+
+.enema-disc{
+    background: radial-gradient(grey , white);
+}
+
+.live-disc{
+    background: #988ABF;
+}
+
+.toypaj-disc{
+    background: #B43034;
+}
+
 .eponyme-disc{
-    background: linear-gradient(to right , blue , pink);
+    background: #488F94;
+}
+
+.hits-disc{
+    background: black;
+}
+
+.neighborhoods-disc{
+    background: radial-gradient(grey , darkgrey);
+}
+
+.california-disc{
+    background: radial-gradient(#F9AB6B , white);
+}
+
+.california-deluxe-disc{
+    background: radial-gradient(#F5EF16 , black);
+}
+
+.nine-disc{
+    background: #FC1E9A;
+}
+
+.onemoretime-disc{
+    background: radial-gradient(darkgrey , white);
 }
 
 .album-name{
