@@ -293,6 +293,25 @@ a{
     transform: translateY(14px);
 }
 
+.toTopBtn{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    background: #f6f6f6;
+    transform: rotate(-90deg);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container{
     padding: 100px 50px 20px;
 }
@@ -310,7 +329,7 @@ a{
     font-weight: 600;
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .article{
@@ -375,7 +394,10 @@ form label{
 
 form select{
     width: 230px;
+    height: 25px;
     text-align: center;
+    border-radius: 10px;
+    font-size: 1.05rem;
 }
 
 .lyrics-text{
@@ -384,6 +406,12 @@ form select{
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
+    color: black;
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration-color: grey;
+    background-color: var(--primary-color);
+    padding: 10px;
 }
 
 /* CETTE PARTIE CONCERNE LE CAROUSEL DE LA PAGE DISCOGRAPHIE */
@@ -828,6 +856,7 @@ form select{
   }
 
   /* FIN DU QUIZ */
+
 
 @media only screen and (max-width : 1300px){
     .timeline li{
