@@ -220,11 +220,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 return response.json();
             })
             .then(data => {
-                lyricsDiv.textContent = data.lyrics;
+                lyricsDiv.innerText = data.lyrics;
             })
             .catch(error => {
                 console.error('Erreur lors de l\'appel API:', error);
-                lyricsDiv.textContent = 'Erreur lors de la récupération des paroles.';
+                lyricsDiv.innerText = 'Erreur lors de la récupération des paroles.';
             });
     });
 });
