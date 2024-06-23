@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         enemaOfTheState: [
             { value: '#', text: '-- Chanson --' },
             { value: 'dumpweed', text: 'Dumpweed' },
-            { value: 'don t leave me', text: 'Don t Leave Me' },
+            { value: 'dont leave me', text: 'Don t Leave Me' },
             { value: 'aliens exist', text: 'Aliens Exist' },
             { value: 'going away to college', text: 'Going Away To College' },
             { value: 'whats my age again', text: 'What s My Age Again?' },
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         blink182: [
             { value: '#', text: '-- Chanson --' },
-            { value: 'feelin this', text: 'Feeling This' },
+            { value: 'feeling this', text: 'Feeling This' },
             { value: 'obvious', text: 'Obvious' },
             { value: 'i miss you', text: 'I Miss You' },
             { value: 'violence', text: 'Violence' },
@@ -221,6 +221,8 @@ document.addEventListener('DOMContentLoaded', function() {
             })
             .then(data => {
                 lyricsDiv.innerText = data.lyrics;
+                lyricsDiv.removeAttribute('hidden');
+                console.log(data);
             })
             .catch(error => {
                 console.error('Erreur lors de l\'appel API:', error);

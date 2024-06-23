@@ -1,6 +1,3 @@
-// ---------- Carousel ---------- //
-
-// scripts.js
 const slideWidth = 350; // Define the width of each slide in pixels
 let currentSlide = 0;
 

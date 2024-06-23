@@ -44,3 +44,5 @@ scrollToTop.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+// ------------------------------------ //
