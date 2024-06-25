@@ -332,6 +332,10 @@ a{
     margin: 20px 0;
 }
 
+h3.title{
+    text-transform: capitalize;
+}
+
 .article{
     height: fit-content;
     margin-top: -60px;
@@ -366,6 +370,15 @@ a{
 .article:nth-child(odd) .illustration{
     float: right;
     margin-left: 20px;
+}
+
+.illustration.portrait{
+    width: 300px;
+}
+
+.illustration.portrait img{
+    width: 280px;
+    border-radius: 10px;
 }
 
 .illustration img{
