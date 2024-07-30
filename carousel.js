@@ -1,11 +1,28 @@
-const slideWidth = 350; // Define the width of each slide in pixels
 let currentSlide = 0;
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.carousel-item');
     const totalSlides = slides.length;
 
-    // Loop back if the index is out of bounds
+    // Récupérer la largeur actuelle d'un slide
+    const carousel = document.querySelector('.carousel');
+    const carouselWidth = carousel.offsetWidth;
+
+    if (carouselWidth === 1120) {
+        slideWidth = 1120;
+    } else if (carouselWidth === 900) {
+        slideWidth = 900;
+    } else if (carouselWidth === 700){
+        slideWidth = 700;
+    } else if (carouselWidth === 600) {
+        slideWidth = 600;
+    } else if (carouselWidth ===400){
+        slideWidth = 400;
+    } else {
+        slideWidth = 300;
+    }
+console.log(slideWidth)
+    // Boucle retour si l'index est hors limites
     if (index >= totalSlides) {
         currentSlide = 0;
     } else if (index < 0) {
@@ -14,11 +31,12 @@ function showSlide(index) {
         currentSlide = index;
     }
 
-    // Move the carousel-inner to show the selected slide
+    // Déplacer le carousel-inner pour montrer le slide sélectionné
     const carouselInner = document.querySelector('.carousel-inner');
     carouselInner.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 
-    // Update the active class
+
+    // Mettre à jour la classe active
     slides.forEach(slide => slide.classList.remove('active'));
     slides[currentSlide].classList.add('active');
 }
@@ -31,5 +49,6 @@ function prevSlide() {
     showSlide(currentSlide - 1);
 }
 
-// Initialize the carousel to show the first slide
+// Initialiser le carousel pour montrer le premier slide
+window.addEventListener('resize', () => showSlide(currentSlide));
 showSlide(currentSlide);
