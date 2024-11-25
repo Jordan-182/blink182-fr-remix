@@ -1,69 +1,364 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blink-182 France</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html"><img src="Images/Blink-182-Logo.png" alt="Logo" height="40px" width="auto"></a>
-            </div>
-            <div class="menu">
-                <div class="menu-head">
-                    <div class="logo"><img src="Images/Blink-182-Logo.png" alt="logo" height="40px" width="auto"></div>
-                    <button type="button" class="close-menu-btn"></button>
-                </div>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li class="dropdown">
-                        <a href="#">Le groupe</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <ul class="sub-menu">
-                            <li><a href="../histoire.html"><span>Histoire</span></a></li>
-                            <li class="dropdown">
-                                <a href="#"><span>Membres</span></a>
-                                <i class="fa-solid fa-chevron-down"></i>
-                                <ul class="sub-menu sub-menu-right">
-                                    <p>Membres actuels</p>
-                                    <li><a href="../mark.html"><span>Mark Hoppus</span></a></li>
-                                    <li><a href="../tom.html"><span>Tom DeLonge</span></a></li>
-                                    <li><a href="../travis.html"><span>Travis Barker</span></a></li>
-                                    <p>Anciens membres</p>
-                                    <li><a href="../scott.html"><span>Scott Raynor</span></a></li>
-                                    <li><a href="../matt.html"><span>Matt Skiba</span></a></li>
-                                </ul>
-                            </li>
-                            <li><a href="../discographie.html"><span>Discographie</span></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../paroles.html">Paroles</a></li>
-                    <li class="dropdown">
-                        <a href="#">Jeux</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <ul class="sub-menu sub-menu-right">
-                            <li><a href="../deviner.html"><span>Devinner la chanson</span></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="https://uk.blink182merch.com/" target="_blank">Boutique</a></li>
-                </ul>
-            </div>
-            <div class="header-right">
-                <button type="button" class="open-menu-btn">
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </button>
-            </div>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="Images/Blink-182-Logo.png"
+              alt="Logo"
+              height="40px"
+              width="auto"
+          /></a>
         </div>
+        <div class="menu">
+          <div class="menu-head">
+            <div class="logo">
+              <img
+                src="Images/Blink-182-Logo.png"
+                alt="logo"
+                height="40px"
+                width="auto"
+              />
+            </div>
+            <button type="button" class="close-menu-btn"></button>
+          </div>
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li class="dropdown">
+              <a href="#">Le groupe</a>
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="sub-menu">
+                <li>
+                  <a href="../histoire.html"><span>Histoire</span></a>
+                </li>
+                <li class="dropdown">
+                  <a href="#"><span>Membres</span></a>
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <ul class="sub-menu sub-menu-right">
+                    <p>Membres actuels</p>
+                    <li>
+                      <a href="../mark.html"><span>Mark Hoppus</span></a>
+                    </li>
+                    <li>
+                      <a href="../tom.html"><span>Tom DeLonge</span></a>
+                    </li>
+                    <li>
+                      <a href="../travis.html"><span>Travis Barker</span></a>
+                    </li>
+                    <p>Anciens membres</p>
+                    <li>
+                      <a href="../scott.html"><span>Scott Raynor</span></a>
+                    </li>
+                    <li>
+                      <a href="../matt.html"><span>Matt Skiba</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../discographie.html"><span>Discographie</span></a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../paroles.html">Paroles</a></li>
+            <li class="dropdown">
+              <a href="#">Jeux</a>
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="sub-menu sub-menu-right">
+                <li>
+                  <a href="../deviner.html"><span>Devinner la chanson</span></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://uk.blink182merch.com/" target="_blank"
+                >Boutique</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <button type="button" class="open-menu-btn">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+        </div>
+      </div>
     </header>
-  <script src="script.js"></script>
-</body>
+    <main class="container">
+      <h2 class="title">Tom DeLonge</h2>
+      <section class="article member--page--top">
+        <div class="illustration portrait">
+          <img src="Images/delonge.jpg" alt="Tom DeLonge en 2023" />
+        </div>
+        <div class="article-text">
+          <p class="article-text mb-10">
+            Tom DeLonge, de son nom complet Thomas Matthew DeLonge Jr., né le 13
+            décembre 1975 à Poway en Californie, est un chanteur, musicien,
+            compositeur et producteur américain, membre des groupes Angels &
+            Airwaves et Blink-182, dont il est le fondateur pour le 1er et le
+            cofondateur (avec Mark Hoppus) pour le 2e. Il est aussi le
+            propriétaire de Macbeth Footwear.
+          </p>
+          <p class="article-text mb-10">
+            Tom DeLonge, en tant que chanteur et guitariste, a participé aux six
+            albums studio de Blink-182, groupe qu'il a fondé en 1992 avec le
+            bassiste Mark Hoppus. En 2002, il crée avec le batteur de Blink-182,
+            Travis Barker, et avec son ami d'enfance David Kennedy, le projet
+            Box Car Racer, qui ne sortira qu'un album. Alors que le style de ces
+            deux groupes est orienté pop punk, DeLonge fonde en 2005 un groupe
+            de rock alternatif, Angels & Airwaves, avec qui il a depuis sorti
+            six albums.
+          </p>
+          <p class="article-text mb-10">
+            En janvier 2015, il quitte Blink-182 et sera remplacé par Matt
+            Skiba. À la suite de son exclusion du groupe, il sort son premier
+            album solo, To the Stars... Demos, Odds and Ends, le 21 avril 2015.
+            Il réintègre le groupe sept ans plus tard, en octobre 2022.
+          </p>
+        </div>
+      </section>
+      <section class="article">
+        <h3 class="title">Biographie</h3>
+        <h4>Blink-182 (1992 à 2005) - (2009 à 2015) - (depuis 2022)</h4>
+        <p class="article-text mb-10">
+          Tom DeLonge fut élevé par ses parents en Californie. Il a un frère
+          plus âgé nommé Shon et une sœur plus jeune nommée Kari. En 1990, pour
+          ses 15 ans, il reçoit en cadeau sa toute première guitare de la part
+          d'un ami. Assez turbulent, il est exclu de son école, Poway High
+          School, durant sa première année après avoir été trouvé saoul durant
+          un match de basket-ball. Intégré à une nouvelle école, il fait alors
+          la connaissance de Anne Hoppus, la sœur de Mark Hoppus. C'est ainsi
+          que vit le jour le groupe qui deviendra plus tard Blink-182 en
+          collaboration avec ce dernier et le batteur Scott Raynor, un vieil ami
+          de Tom. Le groupe a fait plusieurs albums demo en 1993, dont
+          Flyswatter et Buddha, mais ce n'est qu'en 1994 que sortit leur premier
+          album studio Cheshire Cat qui les rendu quelque peu connu dans le sud
+          de la Californie. En 1996, leur deuxième album studio Dude Ranch fut
+          plus populaire et se vendit à environ 1,5 million d'exemplaires
+          partout dans le monde. L'album Enema of the State, sorti en 1999 après
+          Dude Ranch est le plus célèbre du groupe encore aujourd'hui, s'étant
+          vendu à environ 16 millions d'exemplaires.
+        </p>
+        <p class="article-text mb-10">
+          Plus tard, il devient propriétaire de la marque Atticus Clothing
+          pendant plusieurs années, d'abord en binôme avec Mark Hoppus puis seul
+          par la suite, jusqu'à ce qu'il revende la totalité de la marque. En
+          revanche, Macbeth Footwear lui appartient toujours.
+        </p>
+        <p class="article-text mb-10">
+          Les trois membres du groupe se réunissent le 8 février 2009 lors de la
+          51e édition des Grammy awards afin de décerner un prix. Lors du
+          discours précédant la remise, le trio annonce la reformation de
+          Blink-182 : « We used to play music together, and we decided we're
+          going to play music together again. Blink-182 is back! ».
+        </p>
+        <p class="article-text mb-10">
+          En octobre 2012, le groupe annonce avoir quitté la maison de disques
+          Interscope Records et par la même occasion devenir un groupe
+          indépendant20. Blink-182 sort le 18 décembre 2012 un maxi intitulé
+          Dogs Eating Dogs, enregistré dans un studio de Los Angeles et vendu en
+          trois packs sur leur site officiel, le premier single étant Boxing
+          Day.
+        </p>
+        <p class="article-text mb-10">
+          Alors que le groupe semble enfin prêt à entrer en studio début janvier
+          2015 pour y enregistrer son septième album studio, des rumeurs
+          annoncent le départ de DeLonge à la fin du mois, Hoppus et Barker
+          ayant reçu un courriel du manager de celui-ci le 30 décembre
+          expliquant qu'il n'assisterait pas à la session qui commence le 5
+          janvier. À la suite du buzz créé par l'information, DeLonge tient à
+          affirmer qu'il fait toujours partie de Blink-182 et qu'il était
+          d'ailleurs au téléphone pour organiser leur participation au Musink
+          Tattoo Convention and Music Festival 2015 lorsqu'il a appris la
+          nouvelle. Les deux autres membres confient alors au Rolling Stone «
+          qu'ils en ont assez de couvrir Tom » et qu'ils ont l'impression de «
+          revivre la même situation que dix ans plus tôt ». Ils expliquent avoir
+          trouvé un contrat avec un label, que Tom « les a plantés » et
+          confirment « qu'il n'a techniquement pas quitté le groupe », mais que
+          « son comportement ingrat et irrespectueux » les pousse à l'exclure du
+          groupe. Barker ajoute que DeLonge « ne veut pas enregistrer d'album,
+          mais juste faire quelques spectacles avec Blink quand il a besoin
+          d'argent ». DeLonge répond via une lettre ouverte sur sa page
+          Facebook, dans laquelle il considère que le groupe « s'est saboté tout
+          seul » avec Dogs Eating Dogs et que cela avait altéré leurs relations,
+          « coupant quasi-toute discussion entre eux depuis ». Il décrit leur
+          nouveau contrat comme « impossible pour lui », puisque cela l'oblige à
+          quitter toutes ses activités autour d'Angels and Airwaves alors que
+          des bandes dessinées, des livres et un film sont prévus et se dit «
+          triste que les gens soient témoins de leur immaturité ». Hoppus
+          confirme en parallèle la présence de Matt Skiba, chanteur et
+          guitariste d'Alkaline Trio, à leurs côtés pour le Musink Festival le
+          22 mars et s'avoue optimiste sur la suite à donner de leur
+          collaboration.
+        </p>
+        <p class="article-text mb-10">
+          De ce fait, Tom poste via Facebook deux courts extraits de chansons
+          prévus à la base pour Blink-182 en disant : « The date is March 1st -
+          I have a lot of music I was working hard on… Things happen, so I guess
+          we have a change of plans… Either way, I think you guys should hear
+          it. #SongsWithoutAHome #ToTheStars#TomDeLonge ». Le 1er mars, sur le
+          site tomdelonge.me, il est possible de pré-commander l'album To The
+          Stars prévu pour le 21 avril.
+        </p>
+        <p class="article-text mb-10">
+          Fin août 2015, DeLonge avoue vouloir rejouer avec Blink-182 mais que
+          ce n'est pas encore le moment, qu'ils doivent chacun se concentrer sur
+          divers projets.
+        </p>
+        <p class="article-text mb-10">
+          Le 11 octobre 2022, Tom Delonge fait son retour au sein de Blink-182.
+        </p>
+        <h4>Le projet Box Car Racer (2001 à 2003)</h4>
+        <p class="article-text mb-10">
+          À la suite de l'enregistrement de l'album Take Off Your Pants and
+          Jacket de Blink-182 en 2001 et à différentes autres raisons, Tom
+          commence à penser à un projet solo. Il forme finalement un groupe
+          nommé Box Car Racer avec Travis Barker, David Kennedy et Anthony
+          Celestino. Ce groupe devient pour lui une échappatoire aux tensions
+          qui régnaient au sein du groupe Blink-182 et lui permet également de
+          composer des musiques différentes.
+        </p>
+        <h4>Angels & Airwaves (2005 - Actuellement)</h4>
+        <p class="article-text mb-10">
+          La réalisation d'un nouvel album éponyme de Blink-182 ne résout pas
+          les tensions existantes au sein du groupe et c'est durant la tournée
+          européenne en 2005 que le groupe annonce leur séparation pour une
+          durée indéterminée.
+        </p>
+        <p class="article-text mb-10">
+          Après une année de silence, Tom lance son nouveau projet nommé Angels
+          and Airwaves sur lequel il avait travaillé secrètement aux côtés de
+          David Kennedy, bon ami du chanteur et second guitariste de Boxcar
+          Racer, durant son année d'absence. D'autres membres sont ainsi venus
+          se greffer à l'aventure, parmi lesquels Ryan Sinn (bassiste de The
+          Distillers) et Atom Willard (ex-batteur de The Offspring). Après
+          plusieurs mois d'attente, le premier album du groupe, intitulé We
+          Don't Need to Whisper, sort le 22 mai 2006 en Europe (deux chansons,
+          The Adventure et Good Day, avaient été préalablement diffusées sur
+          internet sans l'autorisation du groupe). Le groupe effectue ensuite
+          une tournée américaine et européenne dans des petites salles. Le
+          second album du groupe, sorti le 6 novembre 2007, s'intitule I-Empire.
+          Angels & Airwaves sort le 14 février 2010, jour de la St Valentin, un
+          troisième album appelé Love, suivi en 2011 de la deuxième partie de
+          cet album appelé Love: Part Two. Le 9 décembre 2014, sort le cinquième
+          album du groupe intitulé The Dream Walker.
+        </p>
+        <p class="article-text mb-10">
+          En mars 2015, Tom DeLonge annonce que le groupe sortira 2 albums cette
+          année ainsi qu'un film Strange Times prévu pour Noël 2015.
+        </p>
+        <p class="article-text mb-10">
+          Hormis We Don't Need to Whisper, coproduit avec Danny Loehner, chaque
+          album du groupe est produit par Tom DeLonge.
+        </p>
+        <h4>Projet Solo « To The Stars » (2015 à Actuellement)</h4>
+        <p class="article-text mb-10">
+          À la suite de son exclusion de Blink-182, Tom DeLonge prévoit de
+          sortir un album comprenant les chansons pour lesquelles il avait
+          travaillé pour le groupe, cet album intitulé To The Stars... Demos,
+          Odds And Ends est pré-commandable depuis le 1er mars, sa sortie est
+          prévue le 20 avril. Le 9 mars, sort le premier extrait intitulé New
+          World. Il met en ligne le tracklist de l'album le 19 mars. La chanson
+          The Invisible Parade sort le 23 mars. Une 3e chanson Circle-Jerk-Pit
+          est sortie le 6 avril.
+        </p>
+        <p class="article-text mb-10">
+          Le 18 mars, Tom DeLonge annonce via Twitter qu'il sortira en plus de
+          To The Stars, un autre album solo. Le 2 avril sort le clip vidéo de
+          New World sur YouTube.
+        </p>
+        <h4>Instruments</h4>
+        <p class="article-text mb-10">
+          Durant ses débuts avec Blink 182, Tom joue sur une Fender Stratocaster
+          de couleur blanche montée avec des micros Dimarzio X2N puis sur une
+          Gibson Les Paul noire.
+        </p>
+        <p class="article-text mb-10">
+          En 1999 est lancée la Fender Stratocaster signature Tom DeLonge, qui
+          n'est autre qu'une Fender Stratocaster montée avec un seul micro
+          (Seymour Duncan Invader-SH8) et un seul potentiomètre de volume,
+          disponible en différents coloris.
+        </p>
+        <p class="article-text mb-10">
+          En 2003, Tom rompt le contrat qui le lie à Fender, ce qui arrête la
+          production des guitares à son nom, elles deviennent extrêmement rares
+          et sont considérées par les fans comme des pièces de collection. La
+          même année, Tom signe un nouveau contrat avec Gibson qui lance la
+          Gibson ES-333 Tom Delonge signature semi hollow body (sur laquelle il
+          joue encore aujourd'hui avec Blink-182 & AvA). La guitare est
+          disponible en : brun crème (avec une barre blanche au milieu), blanc
+          crème et également en gris (toutes deux avec une barre noire au
+          milieu).
+        </p>
+        <h4>Vie privée</h4>
+        <p class="article-text mb-10">
+          Thomas DeLonge a un frère. Il s'est marié avec Jennifer Jenkins le 26
+          mai 2001 à Coronado Island sur la baie de San Diego. Ils sortaient
+          ensemble depuis 1996. À leur mariage, le garçon d'honneur était Mark
+          Hoppus et Jimmy Eat World a joué lors de la réception.
+        </p>
+        <p class="article-text mb-10">
+          En septembre 2019, le divorce est prononcé avec sa femme Jennifer,
+          après 18 ans de mariage et 23 ans de vie commune. Il a eu avec elle
+          une fille Ava Elisabeth DeLonge (née en 2002) et un fils Jonas Rocket
+          DeLonge (né en 2006).
+        </p>
+        <p class="article-text mb-10">
+          Mark Hoppus a été son meilleur ami de 1992 à 2005, ils ne se sont
+          revus que fin 2008 quand Travis Barker eut son accident d'avion. Ils
+          ont alors décidés de reformer le groupe Blink-182. En 2015, son amitié
+          avec Mark Hoppus semble s'être une nouvelle fois détériorée puisqu'il
+          se fait exclure du groupe.
+        </p>
+        <h4>Activités politiques et opinions</h4>
+        <p class="article-text mb-10">
+          En 2004, Tom DeLonge prend une part active à la campagne électorale de
+          John Kerry pour l'élection présidentielle. Il participe à de nombreux
+          rassemblements et tente de convaincre d'autres groupes pour le soutien
+          du candidat. Tom, ainsi que les autres membres du groupe Blink-182,
+          prennent position à plusieurs reprises sur des décisions politiques à
+          travers leur site internet. En 2009 et 2014, il soutient Barack Obama.
+        </p>
+        <p class="article-text mb-10">
+          En 2006, Tom DeLonge insinue que le gouvernement américain est
+          responsable des attentats du 11 septembre 2001. Ainsi, lors d'une
+          interview, il s'interroge sur la chute étrange des tours du World
+          Trade Center et sur les capacités d'un pilote débutant à pouvoir
+          diriger des avions énormes sur des cibles aussi étroites.
+        </p>
+        <p class="article-text mb-10">
+          Travis Barker dit de lui que son intérêt pour la politique et les
+          conspirations, particulièrement la recherche d'ovnis, l'ont fait
+          mettre sa carrière de côté pour s'y consacrer.
+        </p>
+        <p class="article-text mb-10">
+          Il soutient activement la recherche contre le cancer du sein et a
+          participé au projet « Keep A Breast » aux côtés de sa sœur Kari en
+          décorant un plâtre du buste de sa femme. Il l'a ensuite vendu aux
+          enchères4. Son implication a été à la fois financière de par sa marque
+          Macbeth, mais aussi personnelle en s'investissant directement sur le
+          terrain. Il est également engagé à PETA.
+        </p>
+        <p class="source">Source : Wikipedia</p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

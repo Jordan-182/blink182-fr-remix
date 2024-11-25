@@ -397,6 +397,28 @@ h3.title {
   padding: 10px 0;
 }
 
+.member--page--top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.member--page--top .article-text {
+  max-width: 1000px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 form {
   display: flex;
   flex-direction: column;

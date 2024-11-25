@@ -1,91 +1,362 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blink-182 France</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html"><img src="Images/Blink-182-Logo.png" alt="Logo" height="40px" width="auto"></a>
-            </div>
-            <div class="menu">
-                <div class="menu-head">
-                    <div class="logo"><img src="Images/Blink-182-Logo.png" alt="logo" height="40px" width="auto"></div>
-                    <button type="button" class="close-menu-btn"></button>
-                </div>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li class="dropdown">
-                        <a href="#">Le groupe</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <ul class="sub-menu">
-                            <li><a href="../histoire.html"><span>Histoire</span></a></li>
-                            <li class="dropdown">
-                                <a href="#"><span>Membres</span></a>
-                                <i class="fa-solid fa-chevron-down"></i>
-                                <ul class="sub-menu sub-menu-right">
-                                    <p>Membres actuels</p>
-                                    <li><a href="../mark.html"><span>Mark Hoppus</span></a></li>
-                                    <li><a href="../tom.html"><span>Tom DeLonge</span></a></li>
-                                    <li><a href="../travis.html"><span>Travis Barker</span></a></li>
-                                    <p>Anciens membres</p>
-                                    <li><a href="../scott.html"><span>Scott Raynor</span></a></li>
-                                    <li><a href="../matt.html"><span>Matt Skiba</span></a></li>
-                                </ul>
-                            </li>
-                            <li><a href="../discographie.html"><span>Discographie</span></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../paroles.html">Paroles</a></li>
-                    <li class="dropdown">
-                        <a href="#">Jeux</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <ul class="sub-menu sub-menu-right">
-                            <li><a href="../deviner.html"><span>Devinner la chanson</span></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="https://uk.blink182merch.com/" target="_blank">Boutique</a></li>
-                </ul>
-            </div>
-            <div class="header-right">
-                <button type="button" class="open-menu-btn">
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </button>
-            </div>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="Images/Blink-182-Logo.png"
+              alt="Logo"
+              height="40px"
+              width="auto"
+          /></a>
         </div>
+        <div class="menu">
+          <div class="menu-head">
+            <div class="logo">
+              <img
+                src="Images/Blink-182-Logo.png"
+                alt="logo"
+                height="40px"
+                width="auto"
+              />
+            </div>
+            <button type="button" class="close-menu-btn"></button>
+          </div>
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li class="dropdown">
+              <a href="#">Le groupe</a>
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="sub-menu">
+                <li>
+                  <a href="../histoire.html"><span>Histoire</span></a>
+                </li>
+                <li class="dropdown">
+                  <a href="#"><span>Membres</span></a>
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <ul class="sub-menu sub-menu-right">
+                    <p>Membres actuels</p>
+                    <li>
+                      <a href="../mark.html"><span>Mark Hoppus</span></a>
+                    </li>
+                    <li>
+                      <a href="../tom.html"><span>Tom DeLonge</span></a>
+                    </li>
+                    <li>
+                      <a href="../travis.html"><span>Travis Barker</span></a>
+                    </li>
+                    <p>Anciens membres</p>
+                    <li>
+                      <a href="../scott.html"><span>Scott Raynor</span></a>
+                    </li>
+                    <li>
+                      <a href="../matt.html"><span>Matt Skiba</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../discographie.html"><span>Discographie</span></a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../paroles.html">Paroles</a></li>
+            <li class="dropdown">
+              <a href="#">Jeux</a>
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="sub-menu sub-menu-right">
+                <li>
+                  <a href="../deviner.html"><span>Devinner la chanson</span></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://uk.blink182merch.com/" target="_blank"
+                >Boutique</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <button type="button" class="open-menu-btn">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+        </div>
+      </div>
     </header>
     <main class="container">
-        <h2 class="title">Mark Hoppus</h2>
-        <section class="article">
-            <div class="illustration portrait">
-                <img src="Images/hoppus.jpg" alt="Mark Hoppus en 2023">
-                <p></p>
-            </div>
-            <div class="article-text">
-                Mark Hoppus, né le 15 mars 1972 à Ridgecrest en Californie, est un musicien et chanteur américain. Il est le cofondateur ainsi que le bassiste 
-                et chanteur des groupes de pop punk californiens Blink-182 et +44, mais aussi Simple Creatures. Mark Hoppus est aussi producteur, il a produit 
-                entre autres les groupes New Found Glory et Motion City Soundtrack. 
-            </div>
-        </section>
-        <section class="article">
-            <h3 class="title">Carrière musicale</h3>
-            <div class="article-text">
-                Mark Hoppus, né le 15 mars 1972 à Ridgecrest en Californie, est un musicien et chanteur américain. Il est le cofondateur ainsi que le bassiste 
-                et chanteur des groupes de pop punk californiens Blink-182 et +44, mais aussi Simple Creatures. Mark Hoppus est aussi producteur, il a produit 
-                entre autres les groupes New Found Glory et Motion City Soundtrack. 
-            </div>
-        </section>        
+      <h2 class="title">Mark Hoppus</h2>
+      <section class="article member--page--top">
+        <div class="illustration portrait">
+          <img src="Images/hoppus.jpg" alt="Mark Hoppus en 2023" />
+        </div>
+        <div class="article-text">
+          Mark Hoppus, né le 15 mars 1972 à Ridgecrest en Californie, est un
+          musicien et chanteur américain. Il est le cofondateur ainsi que le
+          bassiste et chanteur des groupes de pop punk californiens Blink-182 et
+          +44, mais aussi Simple Creatures. Mark Hoppus est aussi producteur, il
+          a produit entre autres les groupes New Found Glory et Motion City
+          Soundtrack.
+        </div>
+      </section>
+      <section class="article">
+        <h3 class="title">Carrière musicale</h3>
+        <h4>Blink-182</h4>
+        <p class="article-text mb-10">
+          À peine âgé de 14 ans, Mark Hoppus part vivre seul avec son père au
+          Texas après le divorce de ses parents. Il reçoit sa première basse,
+          une Fender noire, comme cadeau après avoir aidé son père à repeindre
+          leur nouvelle maison. Installé à Ridgecrest, en Californie, il joue
+          tout d'abord principalement des reprises de The Cure avec le groupe
+          Pier 69. Il rejoint ensuite le groupe The Attic Children en 1988. Sa
+          première ambition est de devenir professeur d'anglais.
+        </p>
+        <p class="article-text mb-10">
+          Plus tard, il déménage à Poway où il fait la connaissance de Tom
+          DeLonge par l'intermédiaire de sa jeune sœur, Anne Hoppus. Tom DeLonge
+          était en effet un ami d'Anne et lui répétait sans cesse son désir de
+          former un groupe sérieux et professionnel. Leur rencontre se déroule
+          en août 1992 dans le garage de DeLonge. La nuit de leur première
+          rencontre, Tom faisait du skateboard avec un groupe d'amis et pour se
+          faire remarquer, Mark Hoppus grimpa au sommet d'un lampadaire, sauta
+          et se brisa les deux chevilles.
+        </p>
+        <p class="article-text mb-10">
+          Le premier groupe ainsi créé est nommé Duck Tape et prend un canard
+          comme effigie. Le nom du groupe est très vite remplacé par Blink.
+          Ayant besoin d'un batteur pour compléter le groupe ainsi créé, Tom
+          DeLonge fait appel à Scott Raynor, alors âgé de 14 ans, dont il avait
+          fait la connaissance à un concours musical. En 1992, le trio
+          enregistre dans la chambre de Scott Raynor leur première cassette démo
+          intitulée Flyswatter. Leur premier concert a lieu dans un bar mais les
+          musiciens n'étant pas majeurs, ils sont autorisés à jouer seulement
+          aux heures autorisées. Le public n'est pas au rendez-vous et le groupe
+          est chassé du bar.
+        </p>
+        <p class="article-text mb-10">
+          C'est à cette époque que Mark commence à travailler dans un studio
+          local d'enregistrement. C'est d'ailleurs grâce à ce travail que Mark
+          Hoppus obtient une stabilité financière suffisante pour supporter le
+          groupe ainsi formé et l'amener à une carrière internationale.
+          Nécessitant de plus en plus de temps pour ses concerts et ne se
+          suffisant plus des week-ends que lui accorde son patron, il quitte
+          finalement son travail en 1996.
+        </p>
+        <p class="article-text mb-10">
+          Après un succès international reconnu, le groupe se sépare en février
+          2005.
+        </p>
+        <p class="article-text mb-10">
+          En novembre 2008, Hoppus explique: «Avec tout ce qu'il s'est passé
+          dernièrement, et après avoir échangé plusieurs coups de téléphone il y
+          a quelques semaines, nous nous sommes revus pendant quelques heures,
+          Tom, Travis et moi. Nous avons eu une conversation très positive. Nous
+          sommes toujours amis, les retrouvailles se sont faites naturellement
+          après ces quatre années sans se parler. Il est évident que la première
+          question pour un grand nombre de personnes sera « Est-ce que cela
+          signifierait une reformation de Blink-182 ? », mais aucun de nous n'a
+          la réponse. Nous n'en avons pas du tout parlé. Maintenant, il est
+          juste bon pour nous trois de nous revoir, de renouer, et de laisser le
+          passé au passé. Les événements des derniers mois ont remplacé tout ce
+          qui était arrivé avant.»
+        </p>
+        <p class="article-text mb-10">
+          Le groupe annonce officiellement sa reformation le 8 février 2009 lors
+          de la cérémonie des Grammy Awards. De nombreux concerts sont donnés à
+          partir de l'été 2009 et le sixième album du groupe, Neighborhoods,
+          sort fin septembre 2011. En 2015, Tom Delonge quitte le groupe,
+          laissant Mark comme le seul membre originel de blink-182. Il est
+          remplacé par Matt Skiba d'Alkaline Trio.
+        </p>
+        <h4>+44</h4>
+        <p class="article-text mb-10">
+          À la suite de la séparation de Blink-182, Mark Hoppus, Travis Barker,
+          Shane Gallagher et Craig Fairbaugh créent un nouveau groupe baptisé
+          +44 qui est aussi écrit Plus44 ou (+44). Leur premier album sort le 14
+          novembre 2006 et s'intitule When Your Heart Stops Beating. En 2008,
+          les membres du groupe annoncent que +44 est en pause indéterminée. À
+          la suite du départ de Tom DeLonge de Blink- 182 en janvier 2015, les
+          rumeurs d'une réunion de +44 sont démenties par Hoppus lui-même sur
+          son compte Instagram après avoir lu des commentaires sur une photo
+          d'une valise de tournée avec un autocollant du groupe.
+        </p>
+        <h4>Simple Creatures</h4>
+        <p class="article-text mb-10">
+          Le 24 janvier 2019, la chanson Drug du groupe Simple Creatures sort
+          sur YouTube. Il est alors écrit en description : Simple Creatures is
+          Mark Hoppus and Alex Gaskarth. Mark Hoppus et Alex Gaskarth ont alors
+          créé un groupe ensemble et ils sortent le premier single
+          officiellement le 25 janvier 2019. Le premier EP, Strange Love sort le
+          29 mars de la même année. Le duo réalise également un deuxième EP,
+          Everything Opposite le 11 octobre 2019.
+        </p>
+        <h4>Instruments</h4>
+        <p class="article-text mb-10">
+          À ses débuts, Hoppus utilise principalement des basses Ernie Ball
+          Music Man. Il joue également sur diverses autres basses Fender, comme
+          une P-Bass à la fin des années 1990.
+        </p>
+        <p class="article-text mb-10">
+          Mark Hoppus possède sa propre série de basses : la Fender Mark Hoppus
+          Jazz Bass. Il s'agit d'une basse hybride entre la Fender Precision
+          Bass (ou "P-Bass") et la Fender Jazz Bass. Il jouait sur un ampli
+          Ampeg SVT-3, puis, il utilisa une tête Ampeg SVT Classic accompagné
+          d'un cabinet Ampeg 8x10 SVT. À partir de 2011, Hoppus a commencé à
+          utiliser, notamment en live, des amplis New Vintage. En 2016, il
+          commence à utiliser des amplis Kemper Profiler en concert.
+        </p>
+        <p class="article-text mb-10">
+          Il utilise des cordes Ernie Ball Hybrid Slinky 45-105 et des médiators
+          Dunlop Tortex .60 mm.
+        </p>
+        <h4>Production</h4>
+        <p class="article-text mb-10">
+          À la fin des années 1990, Mark prend en charge le groupe Fenix*Tx
+          après l'écoute de leur CD mais, en 1999, le succès de l'album Enema Of
+          The State du groupe Blink-182 est tel qu'il lègue cette fonction au
+          manager de Blink-182, Rick DeVoe.
+        </p>
+        <p class="article-text mb-10">
+          Voici la liste des albums que Mark a produit :
+        </p>
+        <ul class="article-text mb-10">
+          <li>- Motion City Soundtrack (Commit To This Memory, 2005)</li>
+          <li>- Rory (We're Up to No Good, We're Up to No Good, 2006)</li>
+          <li>- Idiot Pilot (coproducteur, Wolves, 2007)</li>
+          <li>- Something For Rocket (One Track Mind, 2007)</li>
+          <li>- Socratic (Spread The Rumors, 2008)</li>
+          <li>- Koopa (Lies Sell Stories, 2008)</li>
+          <li>- New Found Glory (Not Without A Fight, 2009)</li>
+          <li>
+            - Fall Out Boy (America's Suitehearts: Remixed, Retouched, Rehabbed
+            and Retoxed, 2009)
+          </li>
+          <li>- Motion City Soundtrack (My Dinosaur Life, 2010)</li>
+          <li>- City (Comma) State (Shady Lane, 2011)</li>
+          <li>- PAWS (No Grace, 2016)</li>
+          <li>- Motion City Soundtrack (Crooked Ways (single), 2020)</li>
+        </ul>
+        <p class="article-text mb-10">
+          Il a également coécrit le morceau The Rest Of My Life sur l'album In
+          With The Out Crowd (2006) du groupe Less Than Jake.
+        </p>
+        <h4>Apparitions vocales</h4>
+        <p class="article-text mb-10">
+          Mark Hoppus fait quelques apparitions vocales sur différentes chansons
+          dont voici la liste :
+        </p>
+        <ul class="article-text mb-10">
+          <li>- The Ataris : That Special Girl (1998)</li>
+          <li>- Simple Plan : I'd Do Anything (2002)</li>
+          <li>- Box Car Racer : Elevator (2002)</li>
+          <li>- MxPx : Empire (2004)</li>
+          <li>- MxPx : Wrecking Hotel Rooms (2005)</li>
+          <li>- Motion City Soundtrack : Hangman (2005)</li>
+          <li>- Renee Renee : Paper Doll (2006)</li>
+          <li>- Vanilla Sky : Nightmare (2007)</li>
+          <li>
+            - Avec Pete Wentz : In Transit , dans la bande originale du film
+            Alice au pays des merveilles (2010)
+          </li>
+          <li>- City (Comma) State : You Crush My Heart (2011)</li>
+          <li>- Tonight Alive : Thank You And Goodnight (2011)</li>
+          <li>- Owl City : Dementia (2012)</li>
+          <li>- McBusted : Hate Your Guts (2014)</li>
+          <li>- All Time Low : Tidal Waves (2015)</li>
+          <li>- New Found Glory : Ready and Willing II (2015)</li>
+          <li>- Neck Deep : December (Again) (2016)</li>
+          <li>- PAWS : Impermanent (2016)</li>
+          <li>- Goldfinger : See You Around (2017)</li>
+          <li>- State Champs : Time Machine (2018)</li>
+          <li>- Amy Shark : Psycho (2018)</li>
+          <li>-The Used : The Lighthouse (2020)</li>
+          <li>- McFly : Growing Up (2020)</li>
+          <li>- Arrested Youth : Find My Own Way (2021)</li>
+          <li>- A Day to Remember : Re-entry (2022)</li>
+          <li>- Smrtdeath : adding-up (2022)</li>
+          <li>- Ricky Himself : Parasocial (2022)</li>
+          <li>- Avril Lavigne : All I Wanted (2022)</li>
+        </ul>
+        <p class="article-text mb-10">
+          Mark Hoppus apparaît dans le clip de la chanson I Don't Care du groupe
+          Fall Out Boy (2008), dans le clip All My Fault du groupe Fenix*Tx
+          (1999) ainsi que dans la vidéo Weightless du groupe All Time Low
+          (2009).
+        </p>
+        <h4>Autres activités</h4>
+        <p class="article-text mb-10">
+          En 2005, Mark Hoppus crée son podcast nommé "Hi, My Name Is Mark",
+          publié environ deux fois par mois. Dans ce podcast, Mark Hoppus joue
+          diverses chansons plus ou moins connues, interview ses artistes
+          favoris et se souvient de certains moments de sa vie.
+        </p>
+        <p class="article-text mb-10">
+          En septembre 2010, Mark se lance dans la présentation télé avec un
+          talk-show intitulé A Different Spin With Mark Hoppus. Diffusé sur la
+          chaine américaine Fuse, cette émission tourne essentiellement sur
+          l'actualité musicale de groupes du moment, le tout avec humour et
+          lives. En mars 2011, l'émission est rebaptisée Hoppus on Music.
+        </p>
+        <p class="article-text mb-10">
+          En novembre 2011, il apparaît dans le film documentaire réalisé par
+          Andrea Blaugrund Nevins The Other F Word qui suit différents membres
+          de groupes punk rock pères de famille.
+        </p>
+        <h4>Marques de vêtement</h4>
+        <p class="article-text mb-10">
+          Mark a longtemps été copropriétaire de la marque Atticus avec Tom
+          DeLonge. Mais après la séparation de Blink-182 en 2005, il revend ses
+          parts pour ne plus avoir de contacts avec DeLonge. Mark a également
+          mentionné le fait qu'il n'aimait pas la direction qu'Atticus avait
+          pris. Aujourd'hui, la marque a été entièrement revendue par Tom
+          DeLonge.
+        </p>
+        <p class="article-text mb-10">
+          En 2012, Mark lance sa propre marque de vêtements "Hi my name is Mark"
+          reprenant ainsi le nom de son podcast. La marque a pour logo une
+          pieuvre également appelée "OctHoppus".
+        </p>
+        <h4>Vie privée</h4>
+        <p class="article-text mb-10">
+          Mark Hoppus se marie avec Skye Everly le 2 décembre 2000. De cette
+          union est né le 5 août 2002 un premier fils nommé Jack18. Il s'est
+          d'ailleurs fait tatouer les prénoms Jack et Skye à l'intérieur de
+          chaque poignet.
+        </p>
+        <p class="article-text mb-10">
+          Il possède son propre studio d'enregistrement au sein duquel sont
+          produits les albums de Blink-182 et +44.
+        </p>
+        <p class="article-text mb-10">
+          En 2011, il décide de déménager à Londres avec sa famille. Il est
+          supporter du club de Chelsea.
+        </p>
+        <p class="article-text mb-10">
+          Le 23 juin 2021, il annonce sur les réseaux sociaux souffrir d'un
+          cancer, plus particulièrement d'un lymphome diffus à grandes cellules
+          B, depuis quelques mois et est soigné par chimiothérapie. Il annonce
+          sa rémission le 29 septembre, malgré des contrôles réguliers.
+        </p>
+        <p class="source">Source : Wikipedia</p>
+      </section>
     </main>
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

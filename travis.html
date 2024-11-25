@@ -1,69 +1,358 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blink-182 France</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html"><img src="Images/Blink-182-Logo.png" alt="Logo" height="40px" width="auto"></a>
-            </div>
-            <div class="menu">
-                <div class="menu-head">
-                    <div class="logo"><img src="Images/Blink-182-Logo.png" alt="logo" height="40px" width="auto"></div>
-                    <button type="button" class="close-menu-btn"></button>
-                </div>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li class="dropdown">
-                        <a href="#">Le groupe</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <ul class="sub-menu">
-                            <li><a href="../histoire.html"><span>Histoire</span></a></li>
-                            <li class="dropdown">
-                                <a href="#"><span>Membres</span></a>
-                                <i class="fa-solid fa-chevron-down"></i>
-                                <ul class="sub-menu sub-menu-right">
-                                    <p>Membres actuels</p>
-                                    <li><a href="../mark.html"><span>Mark Hoppus</span></a></li>
-                                    <li><a href="../tom.html"><span>Tom DeLonge</span></a></li>
-                                    <li><a href="../travis.html"><span>Travis Barker</span></a></li>
-                                    <p>Anciens membres</p>
-                                    <li><a href="../scott.html"><span>Scott Raynor</span></a></li>
-                                    <li><a href="../matt.html"><span>Matt Skiba</span></a></li>
-                                </ul>
-                            </li>
-                            <li><a href="../discographie.html"><span>Discographie</span></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../paroles.html">Paroles</a></li>
-                    <li class="dropdown">
-                        <a href="#">Jeux</a>
-                        <i class="fa-solid fa-chevron-down"></i>
-                        <ul class="sub-menu sub-menu-right">
-                            <li><a href="../deviner.html"><span>Devinner la chanson</span></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="https://uk.blink182merch.com/" target="_blank">Boutique</a></li>
-                </ul>
-            </div>
-            <div class="header-right">
-                <button type="button" class="open-menu-btn">
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
-                </button>
-            </div>
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="Images/Blink-182-Logo.png"
+              alt="Logo"
+              height="40px"
+              width="auto"
+          /></a>
         </div>
+        <div class="menu">
+          <div class="menu-head">
+            <div class="logo">
+              <img
+                src="Images/Blink-182-Logo.png"
+                alt="logo"
+                height="40px"
+                width="auto"
+              />
+            </div>
+            <button type="button" class="close-menu-btn"></button>
+          </div>
+          <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li class="dropdown">
+              <a href="#">Le groupe</a>
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="sub-menu">
+                <li>
+                  <a href="../histoire.html"><span>Histoire</span></a>
+                </li>
+                <li class="dropdown">
+                  <a href="#"><span>Membres</span></a>
+                  <i class="fa-solid fa-chevron-down"></i>
+                  <ul class="sub-menu sub-menu-right">
+                    <p>Membres actuels</p>
+                    <li>
+                      <a href="../mark.html"><span>Mark Hoppus</span></a>
+                    </li>
+                    <li>
+                      <a href="../tom.html"><span>Tom DeLonge</span></a>
+                    </li>
+                    <li>
+                      <a href="../travis.html"><span>Travis Barker</span></a>
+                    </li>
+                    <p>Anciens membres</p>
+                    <li>
+                      <a href="../scott.html"><span>Scott Raynor</span></a>
+                    </li>
+                    <li>
+                      <a href="../matt.html"><span>Matt Skiba</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="../discographie.html"><span>Discographie</span></a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="../paroles.html">Paroles</a></li>
+            <li class="dropdown">
+              <a href="#">Jeux</a>
+              <i class="fa-solid fa-chevron-down"></i>
+              <ul class="sub-menu sub-menu-right">
+                <li>
+                  <a href="../deviner.html"><span>Devinner la chanson</span></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://uk.blink182merch.com/" target="_blank"
+                >Boutique</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header-right">
+          <button type="button" class="open-menu-btn">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
+        </div>
+      </div>
     </header>
-  <script src="script.js"></script>
-</body>
+    <main class="container">
+      <h2 class="title">Travis Barker</h2>
+      <section class="article member--page--top">
+        <div class="illustration portrait">
+          <img src="Images/barker.jpg" alt="Travis Barker en 2023" />
+        </div>
+        <div class="article-text">
+          <p class="article-text mb-10">
+            Travis Landon Barker, né le 14 novembre 1975, est un batteur
+            américain, principalement connu pour être membre des groupes
+            Blink-182 et +44. En parallèle à ces principaux projets, il a
+            également joué dans d'autres groupes tels que Box Car Racer,
+            Transplants et Expensive Taste.
+          </p>
+          <p class="article-text mb-10">
+            Il acquit sa popularité grâce à son style de jeu rapide et très
+            énergique sur scène, mais aussi à son allure, caractérisée par une
+            crête iroquoise et de multiples tatouages. Depuis quelques années,
+            profitant de son succès et d'un intérêt musical toujours plus
+            hétéroclite, il a l'occasion de participer, comme producteur ou
+            simple invité, à divers projets musicaux aux styles variés (hip-hop,
+            punk rock, rock alternatif, rap, pop et même musique country).
+          </p>
+        </div>
+      </section>
+      <section class="article">
+        <h3 class="title">Biographie</h3>
+        <h4>Jeunesse et début (1975 à 1998)</h4>
+        <p class="article-text mb-10">
+          Travis Barker est né à Fontana, en Californie. Il reçut de sa mère sa
+          première batterie alors qu'il n'était âgé que de quatre ans. L'année
+          suivante, il commença ses premières leçons de batterie avec un
+          professeur de jazz qui l'initia à une multitude de styles musicaux.
+        </p>
+        <p class="article-text mb-10">
+          Tragiquement, sa mère décéda la veille de son entrée au lycée de
+          Fontana. Après sa mort, Travis devint beaucoup plus assidu et sérieux
+          dans son apprentissage. C'est ainsi que dès sa deuxième année, il
+          participe à la fanfare (marching band) de son université. Puis les
+          années suivantes, il participe à de nombreux concours et festivals
+          locaux. Durant sa dernière année à l'université, Travis commence ses
+          premiers concerts avec un groupe de rock débutant. En 1993, après
+          l'obtention de son diplôme universitaire, il continue son
+          apprentissage et acquiert une grande expérience au sein de divers
+          groupes parmi lesquels Feeble, The Suicide Machines, et The Aquabats.
+        </p>
+        <p class="article-text mb-10">
+          Ses influences sont nombreuses et variées (de Run-D.M.C. à King
+          Diamond en passant par The Clash). Durant une interview, il affirma
+          par ailleurs que ses batteurs favoris sont Stewart Copeland, Tommy
+          Lee, Ringo Starr et Keith Moon.
+        </p>
+        <h4>
+          La reconnaissance avec Blink 182, première collaboration (1998 à 2005)
+        </h4>
+        <p class="article-text mb-10">
+          En 1998, alors en tournée avec le groupe The Aquabats, il est
+          découvert par les membres du groupe Blink-182 qui recherchaient un
+          batteur en remplacement du leur, Scott Raynor. Doué de rares qualités
+          d'apprentissage, il réussit rapidement à s'intégrer au sein du groupe
+          et participe très vite aux premiers concerts.
+        </p>
+        <p class="article-text mb-10">
+          Il enregistre pour la première fois avec Blink 182 en 1999 sur l'album
+          Enema of the State. L'album fera les meilleures ventes de toute
+          l'histoire du groupe avec des succès comme What's My Age Again?, All
+          the Small Things et Adam's Song qui sont diffusées à la radio et à MTV
+          ; Travis, Tom Delonge et Mark Hoppus accèdent au rang de célébrités.
+          Le groupe fait une apparition dans le film American Pie, et bien que
+          Travis apparaisse dans le film, son nom est confondu avec celui de
+          Scott Raynor au générique.
+        </p>
+        <p class="article-text mb-10">
+          Après la sortie de l'album live The Mark, Tom, and Travis Show: The
+          Enema Strikes Back, le groupe continue sur la vague de son succès et
+          enregistre l'album Take Off Your Pants and Jacket en 2001. L'album se
+          vend à près de 300 000 copies la première semaine de sa sortie. Le
+          groupe enchaine ensuite avec une tournée européenne, puis la tournée
+          Pop Disaster Tour avec Green Day à travers les États-Unis.
+        </p>
+        <p class="article-text mb-10">
+          En juin 2002, il commence le projet Box Car Racer en compagnie de Tom
+          Delonge. Le projet aboutit à la réalisation d'un album éponyme aux
+          sonorités plus douces et sombres que celles du groupe Blink-182.
+        </p>
+        <p class="article-text mb-10">
+          Fin 2002, il forme avec Tim Armstrong du groupe Rancid et Rob Aston le
+          groupe Transplants, aux sonorités totalement différentes de Blink-182
+          ou de Box Car Racer avec un mélange de garage rock, de ska et de
+          hip-hop. L'album Transplants sort en octobre 2002 sur le label Hellcat
+          Records de Tim Armstrong.
+        </p>
+        <p class="article-text mb-10">
+          Début 2003, Blink-182 se remet au travail pour enregistrer l'album
+          éponyme Blink 182 en novembre 2003. Le groupe délaisse alors
+          l'habituel son punk rock pour un son plus travaillé. Il comporte aussi
+          un duo avec Robert Smith de The Cure.
+        </p>
+        <h4>Séparation de Blink 182, +44, collaborations (2005 à 2008)</h4>
+        <p class="article-text mb-10">
+          Après la séparation de Blink-182 en 2005, Barker et Mark Hoppus sont à
+          l'initiative du groupe +44. Pour compléter le groupe, ils s'associent
+          avec l'ancienne chanteuse et guitariste du groupe Get the girl, Carol
+          Heller. Cette dernière doit prématurément quitter le groupe pour des
+          raisons familiales. Pour la remplacer, Hoppus et Barker choisissent
+          les guitaristes Craig Fairbaugh (The Transplants, Lars Frederiksen and
+          the Bastards, Mercy Killers) et Shane Gallagher (The Nervous Return).
+          Pour le premier album du groupe, Barker décide de prendre
+          personnellement la charge des mélodies de piano, activité qu'il avait
+          à cœur depuis longtemps.
+        </p>
+        <p class="article-text mb-10">
+          Durant la réalisation du clip du premier single extrait du premier
+          album, When Your Heart Stops Beating, Travis joue sans se rendre
+          compte d'une fracture à son bras droit. Il continue à jouer durant
+          toute la tournée en Europe malgré sa fracture et des douleurs
+          importantes. Ce n'est que de retour à Los Angeles qu'il apprend la
+          gravité de sa blessure et doit laisser sa place. Son ami Gil Sharone,
+          du groupe Stolen Babies, le remplace à la batterie pour la fin de la
+          tournée et notamment pour la tournée australienne, tournée qu'il avait
+          dû annuler trois ans plus tôt avec le groupe Blink-182 pour une
+          fracture au pied.
+        </p>
+        <p class="article-text mb-10">
+          Par ailleurs, en mars 2007, Travis Barker collabore avec Avril Lavigne
+          sur les chansons Alone (incluse dans le single Girlfriend), ainsi que
+          The Best Damn Thing, Runaway et I Don't Have To Try (figurant dans
+          l'album The Best Damn Thing). De plus, il participe à l'album Trill du
+          rappeur Bun B, ainsi qu'au remix des chansons Can I Have It like Tha
+          de Pharrell, Throw Some D's de Rich Boy et Pump It des Black Eyed
+          Peas. En 2007 il forme avec Rob Aston et le rappeur Paul Wall le
+          groupe Expensive Taste ; ensemble ils sortent une démo de 15 titres
+          disponible sur internet.
+        </p>
+        <p class="article-text mb-10">
+          Durant l'année 2008, Travis s'associe avec DJ Am pour faire
+          différentes représentations mélangeant batterie et mixage ; ils
+          enregistrent une série de morceaux qui sont téléchargeables sur
+          internet. Barker met en ligne sur iTunes plusieurs remix à la batterie
+          dont Low de Flo Rida, Don't Touch Me de Busta Rhymes, Jockin de Jay-Z,
+          et Let's Get Gigh de Warren G. Enfin, il participe à la chanson Dope
+          Boys sur l'album de The Game et 3 AM sur le nouvel album d'Eminem.
+        </p>
+        <h4>L'accident et retour avec Blink 182 (2009 - présent)</h4>
+        <p class="article-text mb-10">
+          Dans la nuit du 19 au 20 septembre 2008, le jet privé de Travis Barker
+          s'écrase peu après son envol de l'aéroport de Columbia en Caroline du
+          Sud. D'après un rapport de l'agence de sécurité aéroportuaire FAA, des
+          aiguilleurs du ciel auraient remarqué que l'avion projetait des
+          étincelles. C'est alors que le jet s'est écarté de la piste de
+          décollage, a traversé les grillages délimitant l'aéroport, a franchi
+          une route et est parti droit dans une glissière de sécurité, où il a
+          explosé. Sur les six passagers (pilote et copilote compris), seuls
+          Travis Barker et DJ Am en échappèrent, avec tout de même des brûlures
+          au 2e et 3e degré (sur 1/3 du corps pour Barker, du bas du corps
+          jusqu'aux hanches et au niveau du visage pour DJ Am). Des membres de
+          l'entourage de Barker et Chris Barker, le jeune assistant personnel de
+          Travis (que l'on peut souvent apercevoir dans Meet the Barkers),
+          décèdent dans l'accident.
+        </p>
+        <p class="article-text mb-10">
+          Selon une théorie, l'éclatement d'une roue du jet serait à l'origine
+          du crash. Barker a poursuivi le constructeur du jet (Learjet) pour
+          dommages-intérêts pour ses traumatismes physiques et psychologiques.
+          Travis est rapidement à nouveau capable de bouger ses doigts et a
+          ainsi écrit des news à ses fans et à ses amis. En outre, Travis aurait
+          décidé d'interrompre son régime végétarien pour mieux se remettre.
+          Travis et DJ Am sortent de l'hôpital fin septembre 2008. Peu de temps
+          après, ils apparaissent à Los Angeles pour une représentation à une
+          fête de Nouvel An.
+        </p>
+        <p class="article-text mb-10">
+          Lors de la 51e cérémonie des Grammy Awards en février 2009, Barker,
+          Delonge et Hoppus apparaissent ensemble sur scène pour la première
+          fois depuis décembre 2004. Barker affirme alors sur scène que le
+          groupe est de retour ensemble ; un message sur le site internet de
+          Blink 182 apparut au même moment pour confirmer la nouvelle et
+          rajouter que le groupe rentre en studio pour un sixième album. Le
+          nouvel album est alors annoncé pour 2011, mais une tournée
+          nord-américaine est annoncée de mai à octobre 2009. Enfin en décembre
+          2009, Hoppus annonce qu'une tournée européenne se déroulerait à l'été
+          2010. En janvier 2010, Travis Barker entre en studio avec la chanteuse
+          Mary J. Blige pour enregistrer une reprise du tube de Led Zeppelin
+          Stairway to Heaven. En avril 2010, il a été le professeur de batterie
+          de Rihanna.
+        </p>
+        <h4>Album solo</h4>
+        <p class="article-text mb-10">
+          Début 2010, Travis Barker annonce qu'il enregistre son premier album
+          solo. Selon lui, l'album est un mélange entre punk rock, hip-hop et
+          électro. L'album Give The Drummer Some sort le 15 mars 2011, de
+          nombreux artistes font leur apparition, notamment Snoop Dogg, The
+          Game, Lil Wayne, Pharrell Williams, Ludacris, Transplants, Slash, Kid
+          Cudi, Cypress Hill, ou encore Corey Taylor.
+        </p>
+        <h4>Affaires commerciales</h4>
+        <p class="article-text mb-10">
+          Musicien accompli et homme d'affaires averti, Travis Barker diversifie
+          ses activités. Ainsi, en 1999, il fonde Famous Stars and Straps,
+          société spécialisée dans la vente de vêtements et produits dérivés. En
+          2004, il participe à la création de LaSalle Records, une société de
+          production musicale14. Enfin, il a ouvert le restaurant Wahoo's Fish
+          Tacos à Norco (Californie). Il a également développé en collaboration
+          avec la société DC Shoes trois paires de chaussures Remix et a
+          distribué son image et son nom pour des produits des marques Orange
+          County Drum and Percussion et Zildjian.
+        </p>
+        <h4>Vie personnelle</h4>
+        <p class="article-text mb-10">
+          Le premier mariage de Travis Barker avec Melissa Kennedy est célébré
+          le 22 septembre 2001. Le divorce est prononcé onze mois plus tard, le
+          6 août 2002. Le 30 octobre 2004, Travis épouse Shanna Moakler, Miss
+          États-Unis 1995. La cérémonie de mariage, de style gothique, est
+          inspirée du film The Nightmare Before Christmas de Tim Burton. De ce
+          mariage sont nés deux enfants, Landon Asher (le 9 octobre 2003) et
+          Alabama Luella (le 24 décembre 2005). Le couple ainsi que leurs
+          enfants, dont Atiana née le 24 mars 1999, de l'union précédente de
+          Shanna avec Oscar de la Hoya, apparaissent entre 2005 et 2006 dans une
+          émission de télé réalité diffusée sur MTV et prénommée Meet the
+          Barkers. Le 8 août 2006, Travis Barker demande le divorce après
+          presque deux ans d'un mariage très médiatique. Le divorce est suivi
+          sur Internet à travers leurs blogs personnels sur Myspace dans
+          lesquels ils n'hésitent pas à confier leurs sentiments respectifs à ce
+          sujet. Durant cette séparation, Travis Barker est surpris en compagnie
+          de Paris Hilton.
+        </p>
+        <p class="article-text mb-10">
+          Après l'accident d'avion de Travis Barker, Shanna Moakler reste à ses
+          côtés presque tout le temps durant son hospitalisation. À sa sortie,
+          Travis et Shanna décident de donner une deuxième chance à leur
+          relation, apparaissant notamment ensemble aux Grammy Awards. Le 1er
+          avril 2009, Barker et Moakler confirment la fin définitive de leur
+          relation à cause d'une dispute dans leur maison californienne qui a
+          nécessité l'intervention de la police. Barker reproche notamment à
+          Moakler d'avoir eu une liaison avec l'acteur Gerard Butler durant son
+          hospitalisation à la suite de son accident d'avion, ce que Moakler
+          conteste.
+        </p>
+        <p class="article-text mb-10">
+          Il est actuellement en couple avec Kourtney Kardashian, l’aînée du
+          clan Kardashian-Jenner. Le couple serait ensemble depuis fin 2019 mais
+          a officialisé leur idylle le 24 janvier 2021. Il s’est fait tatouer
+          son nom en avril 2021. Le 18 octobre 2021, ils annoncent sur leurs
+          comptes Instagram respectifs qu'ils se sont fiancés. Dans la nuit du
+          20 mai 2022, ils se marient en Italie. Le 16 juin 2023, Kourtney
+          annonce sa grossesse publiquement lors d'un concert donné par
+          Blink-182 à Los Angeles. Elle accouche d'un garçon, prénommé Rocky
+          Thirteen, le 4 novembre 2023.
+        </p>
+        <p class="source">Source : Wikipedia</p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
